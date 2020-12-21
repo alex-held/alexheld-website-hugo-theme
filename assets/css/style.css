@@ -411,7 +411,7 @@
   background-color: var(--primary-dark);
   display: grid;
   grid-auto-flow: row;
-  grid-template-areas: "social social social" "contact contact copy";
+  grid-template-areas: "social social social social" "contact contact credits copy";
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, auto);
 }
@@ -515,6 +515,16 @@
   margin: 0;
 }
 
+/* Credits */
+.credits {
+  align-items: center;
+  display: flex;
+  grid-area: credits;
+  font-size: 0.1rem;
+  font-weight: 100;
+  opacity: 0.1;
+}
+
 /* AUTHOR */
 .author {
   font-size: 0.95rem;
@@ -558,7 +568,11 @@
 }
 
 .ripple-btn::after {
-  background-image: radial-gradient(circle, var(--primary-light) 10%, transparent 10.01%);
+  background-image: radial-gradient(
+    circle,
+    var(--primary-light) 10%,
+    transparent 10.01%
+  );
   background-position: 50%;
   background-repeat: no-repeat;
   content: "";
