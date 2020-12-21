@@ -406,6 +406,19 @@
   font-size: 1rem;
 }
 
+/* RESUME */
+.resume {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 90vh;
+}
+
+.resume__content {
+  text-align: center;
+}
+
 /* FOOTER */
 .footer {
   background-color: var(--primary-dark);
