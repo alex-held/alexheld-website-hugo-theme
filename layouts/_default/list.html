@@ -2,6 +2,8 @@
 <main class="content">
 	{{ $paginator := .Paginate (where .Data.Pages.ByDate.Reverse "Type" "posts") }}
 
+	<br>
+
 	{{ range $paginator.Pages }}
 	{{ .Render "card" }}
 	{{ end }}
